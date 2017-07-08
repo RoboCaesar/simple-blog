@@ -1,0 +1,157 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+    margin: 0;
+    font-size: 100%;
+}
+
+
+li {
+    float: left;
+    text-align: center;
+    font-size: 0.9em;
+    /*padding: 10px 20px;*/
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    height: 100%;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+input.smallfield {
+    border: 1px solid #999;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    font-size: 1em;
+}
+
+.biggerform {
+    margin: 5px;
+    border: 1px solid #999;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    height: 200px;
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.smallfield:hover, .biggerform:hover {
+    border: 1px solid #555;   
+}
+
+
+img.thumbnail {
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+span.line-break {
+    width: 80%;
+    border-top: 1px solid #999;
+    margin: 20px auto;
+    display: block;
+}
+
+.button {
+    padding: 0px 10px;
+    align-items: center;
+
+    border: none;
+    height: 40px;
+    background-color: #33BB88;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 0.95em;
+    margin: 5px;
+    line-height: 100%;
+}
+
+button.button {
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #22AA77;    
+}
+
+.button:active {
+    background-color: #119966;       
+}
+
+.button.grey {
+    background-color: #CCC;
+    color: #667;
+}
+
+.button.grey:hover {
+    background-color: #BBB;    
+}
+.button.grey:active {
+    background-color: #AAA;    
+}
+
+
+
+.container {
+    margin: 0px 20%;
+}
+
+.navbar {
+    display: block;
+    background-color: #333333;
+    color: #EEEEFF;
+    height: 38px;
+    width: 100%;
+    position: top;
+}
+
+.navitem {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: inherit;
+}
+
+.navleft {
+    float: left;
+}
+
+.navright {
+    float: right;
+}
+
+.bigtitle {
+    padding: 80px 80px;
+    background-color: #DDFFDD;
+    font-size: 300%;
+    border-radius: 10px;
+}
+
+.footer {
+    font-size: 0.8em;
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #DDFFDD;
+}
+
+li:hover {
+    background-color: #777777;
+}
