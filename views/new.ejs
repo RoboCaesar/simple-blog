@@ -4,15 +4,18 @@
 <a class="button grey" href="/">Home</a>
 <span class="line-break"></span>
 <div class="container">
-    <form>
+    <form action="/blogs" method="POST">
         Title:
-        <input type="text" class="smallfield"name="title">
+        <input type="text" class="smallfield"name="title" required>
         <br>
         Author:
-        <input type="text" class="smallfield"name="author">
+        <input type="text" class="smallfield" name="author" required>
+        <br>
+        Image URL:
+        <input type="text" class="smallfield" name="image" required>
         <br>
         Text:
-        <textarea class="biggerform" name="body"></textarea>
+        <textarea class="biggerform" name="bodytext" required></textarea>
         <button class="button">Submit</a>     
     </form>
 

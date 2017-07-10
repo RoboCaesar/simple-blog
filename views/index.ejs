@@ -2,5 +2,28 @@
 
 <h1 class="bigtitle">Thomas' Thoughts</h1>
 <a class="button" href="/blogs/new">New Post</a>
+<!--<p><%= blogs %></p>-->
+<span class="line-break"></span>
+<% blogs.reverse().forEach(function(thePost) { %>
+
+    <div class="post-space">
+        <img class="thumbnail" src="<%= thePost.image %>" alt="post image">
+        <div class="description">
+            <a class="title" href="/blogs/<%= thePost._id %>"><%= thePost.title %></a>
+            <div style="display: block; height: 20px;">
+                <p class="date"><%= thePost.created.toDateString() %></p>       
+                <p class="author">By <%= thePost.author %></p>
+            </div>
+            <br>
+            <p><%- thePost.body.substring(0, 80) %>...</p>
+            <a class="button grey" href="/blogs/<%= thePost._id %>">Read More</a>
+            <p class="comments header"><i class="fa fa-commenting-o" aria-hidden="true"></i> (<%= thePost.comments.length %>)</p>
+        </div>
+        <br>
+
+
+    </div>
+
+<% }); %>
 
 <% include ./partials/footer.ejs %>

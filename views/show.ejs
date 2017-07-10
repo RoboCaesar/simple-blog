@@ -1,0 +1,22 @@
+<% include ./partials/header.ejs %>
+<a class="button grey" href="/">Back</a>
+<h1 class="bigtitle"><%= thePost.title %></h1>
+
+
+<div class="post-space-b">
+    <img class="bigger-image" src="<%= thePost.image %>" alt="post image">
+    <div style="display: block; height: 20px;">
+        <p class="date"><%= thePost.created.toDateString() %></p>       
+        <p class="author">By <%= thePost.author %></p>
+    </div>
+    <span class="line-break"></span>
+    <p><%- thePost.body %></p>
+
+</div>
+
+</div>
+<div class="container comments">
+<p class="comments header"><i class="fa fa-commenting-o" aria-hidden="true"></i> (<%= thePost.comments.length %>)</p>
+<a class="button" href="/">Post A Comment</a>
+
+<% include ./partials/footer.ejs %>
