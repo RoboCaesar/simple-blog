@@ -3,13 +3,14 @@ body {
     color: #333333;
     margin: 0;
     font-size: 100%;
+    background-color:#EEFFEE;
 }
 
 
 li {
     float: left;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     /*padding: 10px 20px;*/
     display: flex;
     padding: 0px 10px;
@@ -18,6 +19,10 @@ li {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
+}
+
+li:hover {
+    background-color: #777777;
 }
 
 a {
@@ -51,14 +56,31 @@ input.smallfield {
 }
 
 
-img.thumbnail {
-    border: 1px solid #999;
+img {
+    border: 1px solid #BBB;
     padding: 5px;
+    box-shadow: 1px 1px 2px #DDD;
+    margin: 10px;
+    max-width: 90%;
+}
+
+img.thumbnail {
+    display: block;
+    width: 25%;
+    margin: 35px 10px 10px 10px;
+    float: left;
+}
+
+img.bigger-image {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    float: top;
 }
 
 span.line-break {
-    width: 80%;
-    border-top: 1px solid #999;
+    width: 90%;
+    border-top: 1px solid #BBB;
     margin: 20px auto;
     display: block;
 }
@@ -106,7 +128,26 @@ button.button {
 
 
 .container {
-    margin: 0px 20%;
+    margin: 0 20%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #CCC;
+}
+
+.container.comments {
+    margin: 0 25%;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    background-color:#EEFFEE;
+}
+
+.container.navbar {
+    padding: 0;
+    margin: 0 auto;
+    width: 60%;
+    background-color: inherit;
+    border: inherit;
 }
 
 .navbar {
@@ -134,11 +175,37 @@ button.button {
     float: right;
 }
 
+.post-space {
+    border: 1px solid #DDD;
+    width: 80%;
+    height: 250px;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 1px 1px 2px #DDD;
+}
+
+.post-space-b {
+    border: 1px solid #DDD;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #DDD;
+}
+
+
+.description {
+    float: right;
+    width: 65%;
+    margin: 10px 20px 10px 10px;
+}
+
 .bigtitle {
-    padding: 80px 80px;
+    padding: 30px 40px;
     background-color: #DDFFDD;
     font-size: 300%;
     border-radius: 10px;
+    box-shadow: 1px 1px 2px #DDD;
 }
 
 .footer {
@@ -149,9 +216,36 @@ button.button {
     width: 100%;
     padding: 10px 10px;
     text-align: center;
-    background-color: #DDFFDD;
 }
 
-li:hover {
-    background-color: #777777;
+.title {
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: 600;
+    line-height: 2em;
 }
+.title:hover {
+    color: #378;
+}
+
+.author {
+    font-style: italic;
+    color: #777;
+    font-size: 0.8em; 
+    float: left;
+}
+
+.date {
+    float: right;
+    color: #777;
+    font-size: 0.8em; 
+}
+
+.comments.header {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #354;
+    text-align: right;
+    display: inline-block;
+}
+
